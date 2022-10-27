@@ -34,11 +34,10 @@
 			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
 		};
 		shift {
+			label = "shift";
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&bt BT_CLR &trans &rgb_ug RGB_TOG>;
 			sensor-bindings = <&def_lshft>;
-		
-		label = "shift";
 		};
 	};
 };
