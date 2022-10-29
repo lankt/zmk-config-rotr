@@ -27,8 +27,8 @@
 		};
 		control_layer {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp LSHIFT &lt 3 SPACE &kp LALT>;
-			sensor-bindings = <&inc_dec_kp LC(Y) LC(Z)>;
+			bindings = <&mo 2 &lt 3 SPACE &kp (LC(Z)>;
+			sensor-bindings = <&inc_dec_kp LS(LC(Z)) LA(LC(Z))>;
 			
 		};
 		shift {
