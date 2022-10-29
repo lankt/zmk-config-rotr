@@ -2,12 +2,13 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/bt.h>
+#define control_layer 3
 
 &inc_dec_kp {
-	triggers-per-rotation = <4>;
+	triggers-per-rotation = <3>;
 };
 &def_lshft {
-	triggers-per-rotation = <4>;
+	triggers-per-rotation = <3>;
 };
 
 / {
@@ -16,22 +17,19 @@
 
 		default_layer {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
+			bindings = <&kp C_PREV &lt 3 C_PP &kp C_NEXT>;
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
-		one {
-			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_PREV &lt 4 C_PP &kp C_NEXT>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+		photoshop {
+			//CONTROL | SPACE | ALT
+			bindings = <&mo control_layer &lt 3 SPACE &kp LALT>;
+			sensor-bindings = <&inc_dec_kp LBKT RBKT>;
 		};
-		two {
+		control_layer {
 			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp LEFT &lt 4 SPACE &kp RIGHT>;
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
-		};
-		three {
-			//PREV | PLAY/PAUSE | NEXT
-			bindings = <&kp C_MUTE &lt 4 F13 &kp C_PP>;
+			bindings = <&kp RCTRL &lt 3 SPACE &kp LALT>;
+			sensor-bindings = <&inc_dec_kp Z Y>;
+			
 		};
 		shift {
 			label = "shift";
