@@ -22,13 +22,13 @@
 		};
 		photoshop {
 			//CONTROL | SPACE | ALT
-			bindings = <&mo control_layer &lt 3 SPACE &kp LALT>;
-			sensor-bindings = <&inc_dec_kp LBKT RBKT>;
+			bindings = <&lt control_layer B &lt 3 SPACE &kp LALT>;
+			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
 		control_layer {
 			//PREV | PLAY/PAUSE | NEXT
 			bindings = <&kp RCTRL &lt 3 SPACE &kp LALT>;
-			sensor-bindings = <&inc_dec_kp Z Y>;
+			sensor-bindings = <&inc_dec_kp Y Z>;
 			
 		};
 		shift {
