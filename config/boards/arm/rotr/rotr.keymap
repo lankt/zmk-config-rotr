@@ -22,7 +22,7 @@
 		};
 		photoshop {
 			//CONTROL | SPACE | ALT
-			bindings = <&mo 2 B &lt 3 SPACE &kp LALT>;
+			bindings = <&mo 2 &lt 3 SPACE &kp LALT>;
 			sensor-bindings = <&inc_dec_kp RBKT LBKT>;
 		};
 		control_layer {
